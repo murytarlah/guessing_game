@@ -1,0 +1,109 @@
+*{
+  			font-family: cursive;
+            line-height: 2.5em;
+}
+body{
+     background: -webkit-linear-gradient(top, lightblue 50% , lightcoral 50%) no-repeat fixed;
+     width: 100%;
+     height: 100%;
+    display: flex;
+     margin: 0;
+}
+body > div{
+    background: white;
+    margin:  100px auto;
+    width: 50%;
+    text-align: center; 
+    vertical-align:middle;
+    height: 50%;
+    padding: 5%;
+}
+div > legend{
+    text-transform: uppercase;
+    font-weight: 900;
+}
+div > input{
+    margin: 10px;
+    padding: 5px;
+    font-weight: 800;
+    border: 2px solid black;
+}
+ .guessSubmit{
+    margin: 10px;
+    height: 100%;
+    background: transparent;
+    border: 2px solid black;
+}
+#displayer{
+    background: #ddd;
+    width: 40px;
+    text-align: center;
+    float: right;
+    cursor: pointer;
+    color: white;
+    font-weight: 800;
+    padding: 5px auto;
+    border-radius: 50%;
+}
+#displayer:hover{
+    background: white;
+    color: #ddd;
+    border: 2px solid #ddd;
+    transition-duration: 2secs;
+}
+#modal{
+    display: none;
+}
+#modal.show{
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: rgba(0,0,0, 0.5);
+}
+#hint{
+    background: white;
+    position: fixed;
+    width:  50%;
+    top: 30%;
+    left: 25%;
+    margin: auto;
+    padding: 15px;
+    display: block;
+    z-index: 2;
+/*    transition:1;*/
+}
+span{
+    float: right;
+    cursor: pointer;
+    width: 10px;
+    font-size; 15px;
+}
+span:hover{
+    float: right;
+    color: red;
+    cursor: pointer;
+    width: 10px;
+    font-size; 15px;
+}
+
+@media screen and ( max-width : 680px) {
+        body > div{
+          background: white;
+          margin:  10% auto;
+          width: 80%;
+          text-align: center; 
+          height: 50%;
+          padding: auto;
+       }   
+        #hint{
+        background: white;
+        width:  50%;
+        margin: auto;
+        padding: 15px;
+        display: block;
+    }
+}
